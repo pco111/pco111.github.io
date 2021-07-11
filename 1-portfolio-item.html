@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JeffZ's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img alt="W3Schools" src="img/devjane.png" width="150" height="15">
+                </a>
+            </div>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                MERN full-stack <strong>ToDo List</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">API Redux React MongoDB NodeJS Express Heroku Bootstrap JWTauth</p>
+            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <iframe width="1000" height="400" src="https://www.youtube.com/embed/_Jf03QSmZog" class="video-rounded">
+            </iframe>
+            <p>
+                Source Code: https://github.com/pco111/200820_todo_list/tree/master
+            </p>
+            <p>
+                Todo List Web App: https://mern200820shoppinglist.herokuapp.com
+            </p>
+            <p>
+                This is a complete full-stack javascript web application based on the MERN stack. With an API fully-fledged with CRUD functions in the backend 
+                and react-redux in the frontend, this apparently simple application demonstrates my readiness for the full-stack development setting at work.
+            </p>
+            <p>
+                How it works? Explained here with the example of "adding items". Upon a click of button on the webpage, the front-end function makes an API call to the backend using axios 
+                with information about the new item wrapped in the API call. The backend parses the API request and makes changes in the MongoDB database and answers back with the "success"
+                message. When the front end receives such message, it calls for an redux action to modify the global state in Redux(adding the item). Finally, the React components at the front end will 
+                display the changes as they notice the changes in the Redux state. Remarkably, JWT Authentification is also incorporated into the web app. You need to login in order to 
+                modify the todo list.
+            </p>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="https://www.linkedin.com/in/jingfu-zhang/" class="footer__link">LinkedIn</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/pco111">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
